@@ -44,8 +44,8 @@ document.getElementById("descargarCV").addEventListener("click", function() {
     // Nombre del archivo PDF
     var pdfFileName = "HojaDeVida2024 YavoSystem.pdf";
 
-    // Ruta al archivo PDF
-    var pdfFilePath = "portfolio-nick-main/portfolio-nick-main/" + pdfFileName;
+    // Ruta al archivo PDF (puedes especificar solo el nombre del archivo si está en la misma carpeta)
+    var pdfFilePath = pdfFileName;
 
     // Crear un elemento <a> temporal
     var link = document.createElement("a");
@@ -63,3 +63,6 @@ document.getElementById("descargarCV").addEventListener("click", function() {
     // Eliminar el enlace del DOM
     document.body.removeChild(link);
 });
+
+
+
