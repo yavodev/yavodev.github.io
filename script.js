@@ -64,5 +64,15 @@ document.getElementById("descargarCV").addEventListener("click", function() {
     document.body.removeChild(link);
 });
 
+function enviarMensajeWhatsapp() {
+    // Número de teléfono en formato internacional (sin el signo +)
+    var numeroTelefono = '3028632456';
+
+    // Construir la URL de WhatsApp con el número de teléfono
+    var urlWhatsapp = 'https://wa.me/' + numeroTelefono;
+
+    // Abrir la URL en una nueva pestaña
+    window.open(urlWhatsapp, '_blank');
+  }
 
 
